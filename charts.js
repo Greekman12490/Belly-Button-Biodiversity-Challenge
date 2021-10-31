@@ -90,14 +90,14 @@ function buildCharts(sample) {
       text: labels,
       type: "bar",
       orientation: "h",
-      colorscale: "RdBu"
+      marker: {color: '#00FFFF'}
     };
     
     var barData = [bartrace]
 
     // 9. Create the layout for the bar chart. 
     var barLayout = {
-      title: "Top Ten Bacteria Cultures Found",
+      title: "<b>Top Ten Bacteria Cultures Found</b>",
       autosize: true,
       automargin : true
     };
@@ -112,13 +112,13 @@ function buildCharts(sample) {
       y: sample_values,
       text: otu_labels,
       mode: "markers",
-      marker: {size: sample_values, colors: otu_ids, color: 'RdBu'}};
+      marker: {size: sample_values, color: otu_ids, colorscale: 'Electric'}};
     
     var bubbleData = [bubbletrace]
   
     var bubbleLayout = {
-      title: "Bacteria Cultures Per Sample",
-      xaxis: {title: "OTU ID"},
+      title: "<b>Bacteria Cultures Per Sample</b>",
+      xaxis: {title: "<b>OTU ID</b>"},
       autosize: true,
       automargin : true
     }

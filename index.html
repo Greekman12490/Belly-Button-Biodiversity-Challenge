@@ -21,22 +21,22 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 jumbotron text-center" style="background-color:rgb(77, 212, 230);">
-        <h1> Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
+        <h1 style="font-family:Monaco"> Belly Button Biodiversity Dashboard</h1>
+        <p style="font-family:Monaco">Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-2" style="background-color:rgb(77, 212, 230);">
-        <div class="well" style="background-color:rgb(33, 141, 155);">
-          <h5>Test Subject ID No.:</h5>
+        <div class="well" style="background-color:rgb(211, 245, 250);">
+          <h5 style="font-family:Monaco; color:rgb(1, 87, 102)";><b>Test Subject ID No.:</b></h5>
           <!-- <select id="selDataset"></select> -->
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
         <div class="panel panel-primary">
           <div class="panel-heading">
-            <h3 class="panel-title">Demographic Info</h3>
+            <h3 class="panel-title" style="font-family:Monaco"><b>Demographic Info</b></h3>
           </div>
-          <div id="sample-metadata" class="panel-body"></div>
+          <div id="sample-metadata" class="panel-body" style="background-color:rgb(211, 245, 250);"></div>
         </div>
       </div>
       <div class="col-md-5">
