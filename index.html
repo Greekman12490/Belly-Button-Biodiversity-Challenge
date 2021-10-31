@@ -8,6 +8,13 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <style>
+  header {
+  background-color: rgb(77, 212, 230);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
   body {
     background-image: url('https://news.usc.edu/files/2018/02/HarmfulBacteria_web-824x549.jpg');
     background-repeat: no-repeat;
@@ -18,11 +25,18 @@
 
 <body>
 
+  <header>
+    <h2>Bacteria Species</h2>
+  </header>
+  
+
   <div class="container">
-    <div class="row">
+    <div class="jumbotron">
       <div class="col-md-12 jumbotron text-center" style="background-color:rgb(77, 212, 230);">
         <h1 style="font-family:Monaco"> Belly Button Biodiversity Dashboard</h1>
-        <p style="font-family:Monaco">Use the interactive charts below to explore the dataset</p>
+        <p style="font-family:Monaco">The charts below will show data on the different kinds of bacteria located in belly buttons of the subjects</p>
+        <p style="font-family:Monaco">To use the interactive webpage below, select a subject via "Test Subject ID No". This will provide a menu of different subjects of your choosing. The charts will change according to the subject. Hover over the graphs for detail analysis on the bacteria found.</p>
+        
       </div>
     </div>
     <div class="row">
@@ -40,15 +54,28 @@
         </div>
       </div>
       <div class="col-md-5">
+        <div class="well" style="background-color:rgb(77, 212, 230);">
+          <div id="bar">
+
+          </div>
+        </div>
         <div id="bar"></div>
       </div>
       <div class="col-md-5">
-        <div id="gauge"></div>
+        <div class="well" style="background-color:rgb(77, 212, 230);">
+          <div id="gauge">
+
+          </div>
+        </div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
-        <div id="bubble"></div>
+        <div class="well" style="background-color:rgb(77, 212, 230);">
+          <div id="bubble">
+
+          </div>
+        </div>
       </div>
     </div>
     
